@@ -121,7 +121,7 @@ function analyzeSalesData(data, options) {
         seller.products_sold[item.sku] = 0;
       }
       // По артикулу товара увеличить его проданное количество у продавца
-      seller.products_sold[item.sku] += 1;
+      seller.products_sold[item.sku] += item.quantity;
     });
   });
 
